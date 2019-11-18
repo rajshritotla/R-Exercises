@@ -67,11 +67,9 @@ plot(c(sd(xbar2), sd, sd(xbar5)),c(2,0,5), main="Std Dev")
 #____________________________________________________________________________________________________
 
 # The data in the file queries.csv contains the number of queries Google has had each day for a one
-# year period (365 days). The data file is also available at
-# http://kalathur.com/cs544/data/queries.csv. Use this link to read the data using read.csv function
-# when submitting the homework.
+# year period (365 days). 
 
-data <- read.csv("http://kalathur.com/cs544/data/queries.csv")
+data <- read.csv(queries.csv)
 head(data, n=2)
 data = unlist(data$queries)
 head(data, n=2)
